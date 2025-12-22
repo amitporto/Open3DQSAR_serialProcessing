@@ -1,0 +1,1 @@
+python open3DQSAR_filegenerator.py --input sample_coumarin.txt --trn 45 --tsn 9 --num 10
