@@ -1,1 +1,1 @@
-process_open3DQSAR.py C:\open3dtools\open3dqsar\example\MM\try_ismail
+python process_open3DQSAR.py C:\open3dtools\open3dqsar\example\MM\try_ismail
