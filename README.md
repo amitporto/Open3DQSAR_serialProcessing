@@ -10,5 +10,7 @@ Step 3: Use open3DQSAR_filegenerator.py to generate as many as input files where
 python open3DQSAR_filegenerator.py --input sample_coumarin.txt --trn 45 --tsn 9 --num 10
 
 Step 4: After successful generation of these new files, run process_open3DQSAR.py from ‘bin’ folder under open3dtools, where open3DQSAR.exe file is located. It should be run as:
-python process_open3DQSAR.py C:\myfile
+python process_open3DQSAR.py C:\myfile. Warning: The input files are generated as .txt files. Do not keep any other .txt file in this folder. 
+
+Step 5: Check, summary files (Summary_FFDSEL_results.txt and Summary_UVEPLS_results.txt) to find the most statistically robust model. Individually, log output files may further be checked. 
 
