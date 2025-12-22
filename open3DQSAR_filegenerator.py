@@ -3,7 +3,7 @@ from argparse import ArgumentParser
 
 parser = ArgumentParser()
 parser.add_argument('--input', type=str, default=None, help='Path to a .txt file specifying the input')
-parser.add_argument('--trn', type=int, default=None, help='Numbers of compounds in training set')
+parser.add_argument('--dsn', type=int, default=None, help='Total numbers of compounds in dataset')
 parser.add_argument('--tsn', type=int, default=None, help='Numbers of compounds in test set')
 parser.add_argument('--num', type=int, default=None, help='How many new files are to be generated')
 args = parser.parse_args()
@@ -30,7 +30,7 @@ def modify_line_by_match(filename, match_text, new_text, number):
 
 ls=[]
 for i in range(args.num):
-    ls.append(make_random_string(args.trn,args.tsn))
+    ls.append(make_random_string(args.dsn,args.tsn))
 
 filename=args.input
 
@@ -38,5 +38,6 @@ filename=args.input
 if __name__ == '__main__':
    for i in range(len(ls)):
        modify_line_by_match(filename,"set id_list=","set id_list="+str(ls[i])+" attribute=testset", i)
+
 
    
