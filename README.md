@@ -14,5 +14,6 @@ python process_open3DQSAR.py C:\myfile. Warning: The input files are generated a
 
 Step 5: Check, summary files (Summary_FFDSEL_results.txt and Summary_UVEPLS_results.txt) to find the most statistically robust model. Individually, log output files may further be checked. 
 
-IMPORTANT: Summary results are provided in form of Q2LMO and R2Pred. Therefore, keep these options on in the input file.
+IMPORTANT: 1. Summary results are provided in form of Q2LMO and R2Pred. Therefore, keep these options on in the input file.
+           2. This program runs with the MM based models (i.e., when the electrostatic fields are calculated with molecular mechanical force fields) and not for QM based models.
 
